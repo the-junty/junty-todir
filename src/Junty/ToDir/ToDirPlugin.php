@@ -1,4 +1,11 @@
 <?php
+/**
+ * Junty/toDirPlugin
+ *
+ * @author Gabriel Jacinto aka. GabrielJMJ <gamjj74@hotmail.com>
+ * @license MIT License
+ */
+
 namespace Junty\TymylToDir;
 
 use Junty\Plugin\PluginInterface;
