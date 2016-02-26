@@ -1,4 +1,13 @@
 {
+    "name": "junty/junty-todir",
+    "description": "Send globs to another paths.",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "GabrielJMJ",
+            "homepage": "http://github.com/gabrieljmj"
+        }
+    ],
     "autoload": {
         "psr-4": {
             "Junty\\ToDir\\": "src/Junty/ToDir/",
@@ -12,8 +21,5 @@
     "require-dev": {
         "phpunit/phpunit": "^5.2",
         "guzzlehttp/psr7": "^1.2"
-    },
-    "bin": [
-        "bin/junty"
-    ]
+    }
 }
