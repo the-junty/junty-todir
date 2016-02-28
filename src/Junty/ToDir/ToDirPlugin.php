@@ -6,7 +6,7 @@
  * @license MIT License
  */
 
-namespace Junty\TymylToDir;
+namespace Junty\ToDir;
 
 use Junty\Plugin\PluginInterface;
 use Junty\Stream\Stream;
@@ -47,7 +47,13 @@ class ToDirPlugin implements PluginInterface
                         'w+'
                     )
                 );
-                $newStream->write($stream->getContents());
+
+                $src = fopen($stream->getMetaData('uri'), 'r');
+                $to = fopen($dest . '/'. $that->getFileName(
+                    $stream->getMetaData('uri')
+                ), 'w+');
+
+                stream_copy_to_stream($src, $to);
             }
         };
     }
