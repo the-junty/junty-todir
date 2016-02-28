@@ -15,7 +15,7 @@ class ToDirPlugin implements PluginInterface
 {
     private $dest;
 
-    public function __construct(strgin $dest)
+    public function __construct(string $dest)
     {
         $this->dest = $dest;
     }
