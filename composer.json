@@ -16,7 +16,7 @@
     },
     "require": {
         "php": ">=7.0",
-        "junty/junty": "^1.0"
+        "junty/junty-plugin": "^0.1"
     },
     "require-dev": {
         "phpunit/phpunit": "^5.2",
