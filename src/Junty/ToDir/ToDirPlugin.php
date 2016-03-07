@@ -9,7 +9,7 @@
 namespace Junty\ToDir;
 
 use Junty\Plugin\PluginInterface;
-use Junty\Stream\Stream;
+use GuzzleHttp\Psr7\Stream;
 
 class ToDirPlugin implements PluginInterface
 {
