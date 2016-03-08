@@ -9,7 +9,7 @@
 namespace Junty\ToDir;
 
 use Junty\Plugin\PluginInterface;
-use GuzzleHttp\Psr7\Stream;
+use Junty\Stream\Stream;
 
 class ToDirPlugin implements PluginInterface
 {
@@ -48,12 +48,7 @@ class ToDirPlugin implements PluginInterface
                     )
                 );
 
-                $src = fopen($stream->getMetaData('uri'), 'r');
-                $to = fopen($dest . '/'. $that->getFileName(
-                    $stream->getMetaData('uri')
-                ), 'w+');
-
-                stream_copy_to_stream($src, $to);
+                $newStream->write($stream->getContents());
             }
         };
     }
